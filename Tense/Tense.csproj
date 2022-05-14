@@ -11,7 +11,7 @@
 	  <RepositoryUrl>https://github.com/mzuniga58/Tense</RepositoryUrl>
 	  <Version>0.0.1-alpha</Version>
 	  <PackageReleaseNotes>Pre-release. DO NOT USE.</PackageReleaseNotes>
-	  <PackageId>Tensor</PackageId>
+	  <PackageId>Tense</PackageId>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	  <PackageTags>REST, RQL, HAL, Hateoas, Resource Query Language, Web Services, Web API, RESTful</PackageTags>
@@ -21,11 +21,27 @@
 	  <PackageIcon>ico64.png</PackageIcon>
 	  <ApplicationIcon>Resources\MZ.ico</ApplicationIcon>
 	  <PackageIconUrl>https://github.com/mzuniga58/Tense/Tense/Resources/MZ.ico</PackageIconUrl>
+	  <PackageProjectUrl>https://github.com/mzuniga58/Tense</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
 
 	<ItemGroup>
-		<None Include="Resources\ico64.png" Pack="true" PackagePath="\"/>
-		<None Include="Resources\MZ.ico" Pack="true" PackagePath="\"/>
+		<None Include="..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="Resources\ico64.png" Pack="true" PackagePath="\" />
+		<None Include="Resources\MZ.ico" Pack="true" PackagePath="\" />
 	</ItemGroup>
 		
   <ItemGroup>
