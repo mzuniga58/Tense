@@ -8,7 +8,7 @@
 	  <Company>Michael Zuniga</Company>
 	  <Description>A library to aid in the construction of RESTful Web Services</Description>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <RepositoryUrl>https://github.com/mzuniga58/Tensor</RepositoryUrl>
+	  <RepositoryUrl>https://github.com/mzuniga58/Tense</RepositoryUrl>
 	  <Version>0.0.1-alpha</Version>
 	  <PackageReleaseNotes>Pre-release. DO NOT USE.</PackageReleaseNotes>
 	  <PackageId>Tensor</PackageId>
@@ -20,7 +20,7 @@
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
 	  <PackageIcon>ico64.png</PackageIcon>
 	  <ApplicationIcon>Resources\MZ.ico</ApplicationIcon>
-	  <PackageIconUrl>https://github.com/mzuniga58/Tensor/Tensor/Resources/MZ.ico</PackageIconUrl>
+	  <PackageIconUrl>https://github.com/mzuniga58/Tense/Tense/Resources/MZ.ico</PackageIconUrl>
   </PropertyGroup>
 
 	<ItemGroup>

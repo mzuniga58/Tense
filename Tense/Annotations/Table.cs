@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Tensor
+namespace Tense
 {
-    /// <summary>
-    /// Place on an Entity class to specify the database table it represents
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
+	/// <summary>
+	/// Place on an Entity class to specify the database table it represents
+	/// </summary>
+	[AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
 	public class Table : Attribute
 	{
 		/// <summary>

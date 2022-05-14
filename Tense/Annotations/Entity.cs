@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tensor
+namespace Tense
 {
     /// <summary>
     /// The Entity Attribute assigns an entity model to a resource model

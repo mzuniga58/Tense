@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tensor.Resources {
+namespace Tense.Resources {
     using System;
     
     

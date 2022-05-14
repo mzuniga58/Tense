@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Tensor
+namespace Tense
 {
-    /// <summary>
-    /// Place on an Entity class member to further describe the member
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Property, Inherited = false)]
+	/// <summary>
+	/// Place on an Entity class member to further describe the member
+	/// </summary>
+	[AttributeUsage(AttributeTargets.Property, Inherited = false)]
 	public class MemberAttribute : Attribute
 	{
 		/// <summary>

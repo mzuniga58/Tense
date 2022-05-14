@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tensor
+namespace Tense
 {
     /// <summary>
     /// Holds a collection of resources of type T
