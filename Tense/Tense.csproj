@@ -9,7 +9,7 @@
 	  <Description>A library to aid in the construction of RESTful Web Services</Description>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <RepositoryUrl>https://github.com/mzuniga58/Tense</RepositoryUrl>
-	  <Version>0.0.2-alpha</Version>
+	  <Version>0.0.3-alpha</Version>
 	  <PackageReleaseNotes>Pre-release. DO NOT USE.</PackageReleaseNotes>
 	  <PackageId>Tense</PackageId>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
