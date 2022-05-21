@@ -5,25 +5,28 @@ A library to aid in the construction of REST services. The **Tense** library pro
 
 ### Table ###
 
-[Table(<*tablename*>, Schema=<*schema*>, DBType=<*dbType*>)]
+[**Table**(<*tablename*>, Schema=<*schema*>, DBType=<*dbType*>)]
 
 - *tablename* - the name of the database table 
 - *schema* - the database schema
 - *dbType* - a string representing the database technology used to house the databaes. The three valid values are: "SQLSERVER", "POSTGRESQL" and "MYSQL"
 
-Placed before the class definition of entity models to describe the database table which they represent. The attribute can be used to describe a class or enum. Only one Table attribute can be defined per class or enum.
+Placed before the class definition of entity models to describe the database table which they represent. The attribute can be used to describe a class or enum. Only one **Table** attribute can be defined per class or enum.
 
-### Entity ###
+**Example**
 
-[Entity(<*type*>)]
-
-- *type* - the type of entity model associated with the resource model.
-
-Placed before the class definition of resource models to associate the resource model with the entity model. The attribute can only be used to describe a class. There is no such thing as a Resource enum, because a resource enum would simply be the same as the entity enum, just with a different class name.
+```
+	///	<summary>
+	///	EBook
+	///	</summary>
+	[Table("Books", Schema="dbo", DBType="SQLSERVER")]
+	public class EBook
+	{
+```
 
 ### Member ###
 
-[Member(Length=<*length*>, Precision=<*precision*>, Scale=<*scale*>, ColumnName=<*columnName*>, IsIdentity=<*isIdentity*>, IsPrimaryKey=<*isPrimaryKey*>,
+[**Member**(Length=<*length*>, Precision=<*precision*>, Scale=<*scale*>, ColumnName=<*columnName*>, IsIdentity=<*isIdentity*>, IsPrimaryKey=<*isPrimaryKey*>,
         IsIndexed=<*isIndexed*>, IsForeignKey=<*isForeignKey*>, ForeignTableName=<*foreignTableName*>, IsFixed=<*isFixed*>, IsNullable=<*isNullable*>,
         AutoField=<*autoField*>, NativeDataType=<*nativeDataType*>, SkipUpdate=<*skipUpdate*>)]
 
@@ -42,7 +45,42 @@ Placed before the class definition of resource models to associate the resource 
 - *nativeDataType* - the native data type of the column, as defined by the database.
 - *skipUpdate* - if true, the code should ignore any values in the model and leave the column unchanged in the database record on update.
 
-The member attribute is placed before a property definition in the entity model to further define the representation of the member in the database. The RQL SQL Statement generatator will use these values to generate the appropriate SQL Statement for the operation desired.
+The **Member** attribute is placed before a property definition in the entity model to further define the representation of the member in the database. The RQL SQL Statement generatator will use these values to generate the appropriate SQL Statement for the operation desired.
+
+**Example**
+
+```
+	///	<summary>
+	///	EBook
+	///	</summary>
+	[Table("Books", Schema = "dbo", DBType = "SQLSERVER")]
+	public class EBook
+	{
+		///	<summary>
+		///	BookId
+		///	</summary>
+		[Member(IsPrimaryKey = true, IsIdentity = true, AutoField = true, IsIndexed = true, IsNullable = false, NativeDataType="int")]
+		public int BookId { get; set; }
+```
+
+### Entity ###
+
+[**Entity**(<*type*>)]
+
+- *type* - the type of entity model associated with the resource model.
+
+Placed before the class definition of resource models to associate the resource model with the entity model. The attribute can only be used to describe a class. There is no such thing as a Resource enum, because a resource enum would simply be the same as the entity enum, just with a different class name.
+
+**Example**
+
+```
+	///	<summary>
+	///	Book
+	///	</summary>
+	[Entity(typeof(EBook))]
+	public class Book
+	{
+```
 
 ### PagedSet<T> ###
 
