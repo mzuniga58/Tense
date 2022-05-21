@@ -5,7 +5,7 @@ namespace Tense
     /// <summary>
     /// The Entity Attribute assigns an entity model to a resource model
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Enum, Inherited = false, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
 	public class EntityAttribute : Attribute
 	{
 		/// <summary>
