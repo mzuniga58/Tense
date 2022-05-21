@@ -6,12 +6,12 @@ namespace Tense
 	/// Place on an Entity class to specify the database table it represents
 	/// </summary>
 	[AttributeUsage(AttributeTargets.Class|AttributeTargets.Enum, Inherited = false, AllowMultiple = false)]
-	public class Table : Attribute
+	public class TableAttribute : Attribute
 	{
 		/// <summary>
 		/// Table attribute constructor
 		/// </summary>
-		public Table(string tableName)
+		public TableAttribute(string tableName)
 		{
 			Name = tableName;
 		}

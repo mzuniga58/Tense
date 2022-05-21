@@ -39,18 +39,6 @@ namespace Tense
 		public virtual int Scale { get; set; }
 
 		/// <summary>
-		/// The name of the table containing the member. If not specified, the table is assumed
-		/// to be the primary table of the containing object.
-		/// </summary>
-		public virtual string? TableName { get; set; }
-
-		/// <summary>
-		/// The name of the schema containing the member. If not specified, the schema is assumed
-		/// to be the primary schema of the containing object.
-		/// </summary>
-		public virtual string? Schema { get; set; }
-
-		/// <summary>
 		/// The column name in the table. If not specified, the column name is assumed to be the
 		/// same as the property name.
 		/// </summary>

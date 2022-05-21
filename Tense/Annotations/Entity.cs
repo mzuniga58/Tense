@@ -6,12 +6,12 @@ namespace Tense
     /// The Entity Attribute assigns an entity model to a resource model
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Enum, Inherited = false, AllowMultiple = false)]
-	public class Entity : Attribute
+	public class EntityAttribute : Attribute
 	{
 		/// <summary>
 		/// Member attribute constructor
 		/// </summary>
-		public Entity(Type entityType)
+		public EntityAttribute(Type entityType)
 		{
 			EntityType = entityType;
 		}
