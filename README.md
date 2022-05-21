@@ -9,7 +9,7 @@ A library to aid in the construction of REST services. The **Tense** library pro
 
 - *tablename* - the name of the database table 
 - *schema* - the database schema
-- *dbType* - a string representing the database technology used to house the databaes. The three valid values are: "SQLSERVER", "POSTGRESQL" and "MYSQL"
+- *dbType* - a string representing the database technology used to house the database. The three valid values are: "SQLSERVER", "POSTGRESQL" and "MYSQL"
 
 Placed before the class definition of entity models to describe the database table which they represent. The attribute can be used to describe a class or enum. Only one **Table** attribute can be defined per class or enum.
 
