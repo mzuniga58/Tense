@@ -1,5 +1,5 @@
 # Tense #
-A library to aid in the construction of REST services. The *Tense* library provides the definition of attributes to aid in the decription of database tables. It also defines the PagedSet<> class.
+A library to aid in the construction of REST services. The **Tense** library provides the definition of attributes to aid in the Entity Model's decription of database entities they represent. It also contains an attribute to associate a Resource Model to an Entity Model. Finally, It also defines the **PagedSet<>** class used to defined paged query results.
 
 ## Attributes Defined in Tense ##
 
