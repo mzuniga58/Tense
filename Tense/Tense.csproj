@@ -9,7 +9,7 @@
 	  <Description>A library to aid in the construction of RESTful Web Services</Description>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <RepositoryUrl>https://github.com/mzuniga58/Tense</RepositoryUrl>
-	  <Version>0.0.4-alpha</Version>
+	  <Version>0.0.5-alpha</Version>
 	  <PackageReleaseNotes>Pre-release. DO NOT USE.</PackageReleaseNotes>
 	  <PackageId>Tense</PackageId>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -42,6 +42,10 @@
 		</None>
 		<None Include="Resources\ico64.png" Pack="true" PackagePath="\" />
 		<None Include="Resources\MZ.ico" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
 	</ItemGroup>
 		
   <ItemGroup>
